@@ -11,15 +11,16 @@
     Ya podrias correr el proyecto :D
 */
 const express = require('express');
+//const json = require('express')
 const connectDB = require('./config/db');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const UsuariosRoutes = require('./routes/UsuariosRoutes');
 
 const app = express();
 //se conecta la base de datos al correr el script
 connectDB();
 // Middleware
-app.use(bodyParser.json());
+app.use(express.json());
  
 // Rutas
 app.use('/api', UsuariosRoutes);
