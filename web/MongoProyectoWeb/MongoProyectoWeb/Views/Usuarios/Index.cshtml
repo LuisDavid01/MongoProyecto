@@ -1,0 +1,34 @@
+﻿@model List<UsuariosModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay Ejercicios para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center">Consultar de usuarios</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>correo</th>
+                <th>foto de perfil</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var UsuariosModel in Model)
+            {
+                <tr>
+                    <td>@UsuariosModel.nombre</td>
+                    <td>@UsuariosModel.correo</td>
+                    <td><img alt="foto de perfil" src=@UsuariosModel.foto_de_perfil  /></td>
+                    
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
