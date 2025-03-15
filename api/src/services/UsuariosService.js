@@ -1,3 +1,6 @@
+/*
+    Aqui debe ir la logica de los diferentes requerimietnos funcionales
+*/
 const Usuarios = require('../models/UsuariosModel');
  
 class UsuariosService {

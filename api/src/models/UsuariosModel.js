@@ -1,3 +1,8 @@
+/*
+    Esquema de para la colección usuarios en la base de datos
+    En los esquemas deben poner todos los atributos de la base de datos para poder manipularlos.
+*/
+
 const mongoose = require('mongoose');
 const UsuariosSchema = new mongoose.Schema({
 

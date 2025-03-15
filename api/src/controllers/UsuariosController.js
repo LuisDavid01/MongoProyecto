@@ -1,3 +1,12 @@
+/*
+    Controlador para usuarios
+    
+
+
+
+*/
+
+
 const UsuariosService = require('../services/UsuariosService');
  
 class UsuariosController {

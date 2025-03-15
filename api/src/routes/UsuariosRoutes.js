@@ -1,3 +1,7 @@
+/*
+   Enrutamiento de los endpoints del api para Usuarios
+*/
+
 const express = require('express');
 const router  = express.Router();
 const UsuariosController = require('../controllers/UsuariosController');

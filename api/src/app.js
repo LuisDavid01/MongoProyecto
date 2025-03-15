@@ -6,14 +6,14 @@
         npm install express
         npm install dotenv
         npm install mongoose
-        npm install body-parser
+        
 
     Ya podrias correr el proyecto :D
 */
 const express = require('express');
-//const json = require('express')
+
 const connectDB = require('./config/db');
-//const bodyParser = require('body-parser');
+//importamos el enrutamiento para usuarios
 const UsuariosRoutes = require('./routes/UsuariosRoutes');
 
 const app = express();
