@@ -1,0 +1,45 @@
+﻿@model List<UsuariosModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay Ejercicios para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center">Consultar de usuarios</h2>
+    <a class="btn btn-success " asp-area="" asp-controller="Usuarios" asp-action="CrearUsuario"> CrearUsuario</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>correo</th>
+                <th>foto de perfil</th>
+                <th></th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var UsuariosModel in Model)
+            {
+                <tr>
+                    <td>@UsuariosModel.nombre</td>
+                    <td>@UsuariosModel.correo</td>
+                    <td><img alt="foto de perfil" src="@UsuariosModel.foto_de_perfil"  /></td>
+                    <td>
+
+                        <a class="btn btn-success " asp-area="" asp-controller="Usuarios" asp-route-id="@UsuariosModel._id" asp-action="VerUsuario"> Editar usuario</a>
+                        <form asp-controller="Usuarios" asp-action="EliminarUsuario" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@UsuariosModel._id" />
+                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este usuario?');">Eliminar usuario</button>
+                        </form>
+
+                    </td>
+                    
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
