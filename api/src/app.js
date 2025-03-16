@@ -8,6 +8,9 @@
         npm install mongoose
         
 
+        comando para correr la base de datos:
+        mongod --port 27025 --dbpath "C:\data\db\eataway"
+
     Ya podrias correr el proyecto :D
 */
 const express = require('express');

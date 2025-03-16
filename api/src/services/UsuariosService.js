@@ -5,14 +5,15 @@ const Usuarios = require('../models/UsuariosModel');
  
 class UsuariosService {
   async createUsuarios(data) {
- 
-    const Usuarios = new Usuarios(data);
-    await Usuarios.save();
-    return Usuarios;
+    
+    const Usuario = new Usuarios(data);
+     
+    await Usuario.save();
+    return Usuario;
   }
  
   async getUsuarios(id) {
-    if(id != 0){
+    if(id != 0 ){
       return await Usuarios.findById(id);
     }
     return await Usuarios.find();
@@ -27,10 +28,7 @@ class UsuariosService {
     return await Usuarios.findByIdAndDelete(id);
   }
 
-  async promerio(id) {
-    
-    return await Usuarios.findByIdAndDelete(id);
-  }
+  
 }
  
 module.exports = new UsuariosService();

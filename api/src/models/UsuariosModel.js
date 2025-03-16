@@ -13,4 +13,4 @@ const UsuariosSchema = new mongoose.Schema({
     foto_de_perfil: { type: String }
 },{ collection: 'Usuarios' });
 
-module.exports = mongoose.model('Usuario', UsuariosSchema)
+module.exports = mongoose.model('Usuarios', UsuariosSchema)
