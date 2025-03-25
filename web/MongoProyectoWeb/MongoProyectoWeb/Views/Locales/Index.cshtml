@@ -1,0 +1,48 @@
+﻿@model List<LocalesModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay Ejercicios para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center">Consultar Locales</h2>
+    <a class="btn btn-success" asp-area="" asp-controller="Locales" asp-action="CrearLocal"> Crear Local</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>categoria</th>
+                <th>descripcion</th>
+                <th></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var LocalesModel in Model)
+            {
+                <tr>
+                    <td>@LocalesModel.nombre</td>
+                    <td>@LocalesModel.categoria</td>
+                    <td>
+                        <p>@LocalesModel.descripcion</p>
+                        
+                    </td>
+                    <td>
+
+                        <a class="btn btn-success " asp-area="" asp-controller="Locales" asp-route-id="@LocalesModel._id" asp-action="VerLocal"> Editar Local</a>
+                        <form asp-controller="Locales" asp-action="EliminarLocal" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@LocalesModel._id" />
+                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este Local?');">Eliminar Local</button>
+                        </form>
+
+                    </td>
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
