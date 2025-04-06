@@ -23,6 +23,7 @@ const MenusRoutes = require('./routes/MenusRoutes');
 const UbicacionesRoutes = require('./routes/UbicacionesRoutes');
 const HorariosRoutes = require('./routes/HorariosRoutes');
 const FotosRoutes = require('./routes/FotoRoutes');
+const LocalesRoutes = require('./routes/LocalesRoutes');
 const app = express();
 //se conecta la base de datos al correr el script
 connectDB();
@@ -36,7 +37,7 @@ app.use('/api',MenusRoutes);
 app.use('/api', UbicacionesRoutes);
 app.use('/api', HorariosRoutes);
 app.use('/api', FotosRoutes);
-
+app.use('/api', LocalesRoutes);
 
 const PORT = process.env.PORT ?? 8760; // valor por defecto del puerto es 8760
 app.listen(PORT, () => console.log('El servidor esta corriendo en el puerto: ', PORT));
