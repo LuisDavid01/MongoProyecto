@@ -16,11 +16,11 @@ TBD
 ```bash
 git https://github.com/LuisDavid01/MongoProyecto
 ```
-4. Revisar el archivo .env.example para ver como configurar las variables de entorno para correr el archivo
+4. Revisar el archivo .env.example para ver como configurar las variables de entorno para correr el api
 
 5. Instalacion de dependecias del api
   ```bash
-  cd MongoProyecto/api
+  cd api
   npm install
   npm run dev
   ```
