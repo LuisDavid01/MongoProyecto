@@ -19,6 +19,7 @@ const connectDB = require('./config/db');
 //importamos el enrutamiento para usuarios
 const UsuariosRoutes = require('./routes/UsuariosRoutes');
 const CategoriasRoutes = require('./routes/CategoriasRoutes');
+const MenusRoutes = require('./routes/MenusRoutes');
 const LocalesRoutes = require('./routes/LocalesRoutes');
 
 const app = express();
@@ -30,6 +31,7 @@ app.use(express.json());
 // Rutas
 app.use('/api', UsuariosRoutes);
 app.use('/api', CategoriasRoutes);
+app.use('/api',MenusRoutes);
 app.use('/api', LocalesRoutes);
 
 const PORT = process.env.PORT ?? 8760; // valor por defecto del puerto es 8760

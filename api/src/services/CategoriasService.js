@@ -28,6 +28,11 @@ class CategoriasService {
     return await Categorias.findByIdAndDelete(id);
   }
 
+  async getCategoriaNombre(Nombre) {
+    
+    return await Categorias.find({Nombre: `${Nombre}`});
+  }
+
   
 }
  
