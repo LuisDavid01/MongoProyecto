@@ -4,7 +4,7 @@
 */
 
 const mongoose = require('mongoose');
-const LocalesSchema = new mongoose.Schema({
+const MenusSchema = new mongoose.Schema({
 
     _id: { type: Number},
     nombre_comida: { type: String},
@@ -12,4 +12,4 @@ const LocalesSchema = new mongoose.Schema({
     tipo_comida: { type: String }
 },{ collection: 'Menus' });
 
-module.exports = mongoose.model('Menus', LocalesSchema)
+module.exports = mongoose.model('Menus', MenusSchema)

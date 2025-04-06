@@ -20,8 +20,13 @@ const connectDB = require('./config/db');
 const UsuariosRoutes = require('./routes/UsuariosRoutes');
 const CategoriasRoutes = require('./routes/CategoriasRoutes');
 const MenusRoutes = require('./routes/MenusRoutes');
+const UbicacionesRoutes = require('./routes/UbicacionesRoutes');
+const HorariosRoutes = require('./routes/HorariosRoutes');
+const FotosRoutes = require('./routes/FotoRoutes');
 const LocalesRoutes = require('./routes/LocalesRoutes');
-
+const EventosEspecialesRoutes = require('./routes/EventosEspecialesRoutes');
+const ContactosRoutes = require('./routes/ContactosRoutes');
+const ContactoNegocio = require('./routes/ContactoNegocioRoutes');
 const app = express();
 //se conecta la base de datos al correr el script
 connectDB();
@@ -32,7 +37,13 @@ app.use(express.json());
 app.use('/api', UsuariosRoutes);
 app.use('/api', CategoriasRoutes);
 app.use('/api',MenusRoutes);
+app.use('/api', UbicacionesRoutes);
+app.use('/api', HorariosRoutes);
+app.use('/api', FotosRoutes);
 app.use('/api', LocalesRoutes);
+app.use('/api', EventosEspecialesRoutes);
+app.use('/api', ContactosRoutes);
+app.use('/api', ContactoNegocio);
 
 const PORT = process.env.PORT ?? 8760; // valor por defecto del puerto es 8760
 app.listen(PORT, () => console.log('El servidor esta corriendo en el puerto: ', PORT));
