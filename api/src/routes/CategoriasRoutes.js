@@ -11,5 +11,6 @@ router.get('/Categorias/:id', CategoriasController.getCategorias);
 router.post('/Categorias', CategoriasController.createCategorias);
 router.put('/Categorias/:id', CategoriasController.updateCategorias);
 router.delete('/Categorias/:id', CategoriasController.deleteCategorias);
+router.get('/Categorias/buscar/:Nombre', CategoriasController.getPorNombreCategorias);
 
 module.exports = router;
