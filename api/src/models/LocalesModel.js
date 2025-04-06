@@ -8,7 +8,7 @@ const LocalesSchema = new mongoose.Schema({
 
     _id: { type: Number},
     nombre: { type: String},
-    categoria: { type: String },
+    id_categoria: { type: Number},
     descripcion: { type: String }
 },{ collection: 'Locales' });
 
