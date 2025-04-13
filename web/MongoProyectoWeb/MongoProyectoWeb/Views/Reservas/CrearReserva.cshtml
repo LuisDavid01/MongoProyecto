@@ -1,0 +1,55 @@
+﻿@model MongoProyectoWeb.Models.ReservasModel
+
+<form asp-controller="Reservas" asp-action="CrearReserva">
+    <div class="row">
+        <h2 class="text-center">Agregar Reserva</h2>
+
+        <!-- ID de la reserva -->
+        <div class="form-group col-md-12 mb-4">
+            <input type="text" required class="form-control input-lg" asp-for="_id" placeholder="ID de la reserva">
+        </div>
+
+        <!-- Selección de usuario -->
+        <div class="form-group col-md-12 mb-4">
+            <label asp-for="IdUsuario">Usuario</label>
+            <select asp-for="IdUsuario" class="form-control" required>
+                <option value="">Seleccione un usuario</option>
+                @foreach (var usuario in ViewBag.Usuarios)
+                {
+                    <option value="@usuario.Value">@usuario.Text</option>
+                }
+            </select>
+        </div>
+
+        <input type="hidden" asp-for="IdLocal" />
+
+        <!-- Fecha -->
+        <div class="form-group col-md-6 mb-4">
+            <label asp-for="fecha">Fecha</label>
+            <input type="date" class="form-control" asp-for="fecha" required />
+        </div>
+
+        <!-- Hora -->
+        <div class="form-group col-md-6 mb-4">
+            <label asp-for="hora">Hora</label>
+            <input type="time" class="form-control" asp-for="hora" required />
+        </div>
+
+        <!-- Número de personas -->
+        <div class="form-group col-md-6 mb-4">
+            <label asp-for="numero_personas">Número de personas</label>
+            <input type="number" class="form-control" asp-for="numero_personas" min="1" required />
+        </div>
+
+        <!-- Descripción -->
+        <div class="form-group col-md-12 mb-4">
+            <label asp-for="descripcion">Descripción</label>
+            <textarea class="form-control" asp-for="descripcion" placeholder="Descripción de la reserva" required></textarea>
+        </div>
+
+        <!-- Botón -->
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary btn-pill mb-4">Guardar reserva</button>
+        </div>
+    </div>
+</form>
