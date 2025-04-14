@@ -1,0 +1,9 @@
+{
+    "_id": {
+      "$oid": "67f94858e6d0cc3f054efe83"
+    },
+    "nombre": "Juan Pérez",
+    "correo": "juanperez@example.com",
+    "contraseña": "secretPassword123",
+    "foto_de_perfil": "https://example.com/imagenes/perfil.jpg"
+  }

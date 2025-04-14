@@ -1,0 +1,26 @@
+[
+  {
+    "_id": 1,
+    "Nombre": "Restaurantes",
+    "Descripcion": "Establecimientos que ofrecen comidas preparadas para el consumo en el lugar o para llevar.",
+    "Ejemplos": ["Restaurante Italiano", "Steakhouse", "Marisquería"]
+  },
+  {
+    "_id": 2,
+    "Nombre": "Cafeterías",
+    "Descripcion": "Lugares especializados en servir café, té y desayunos ligeros o repostería.",
+    "Ejemplos": ["Café de especialidad", "Pastelería francesa", "Tetería"]
+  },
+  {
+    "_id": 3,
+    "Nombre": "Food Trucks",
+    "Descripcion": "Vehículos adaptados para preparar y vender comida rápida en la calle.",
+    "Ejemplos": ["Tacos al pastor", "Hamburguesas gourmet", "Comida vegana"]
+  },
+  {
+    "_id": 4,
+    "Nombre": "Bares",
+    "Descripcion": "Establecimientos enfocados en bebidas alcohólicas, a veces con opciones de comida ligera.",
+    "Ejemplos": ["Bar de cocteles", "Pub inglés", "Cantina mexicana"]
+  }
+]

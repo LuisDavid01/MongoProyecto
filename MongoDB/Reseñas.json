@@ -1,0 +1,16 @@
+[
+  {
+    "_id": 1,
+    "Id_usuario": "user001",
+    "Id_local": "local001",
+    "Calificacion": 4.5,
+    "Comentario": "Excelente ambiente y servicio."
+  },
+  {
+    "_id": 2,
+    "Id_usuario": "user002",
+    "Id_local": "local002",
+    "Calificacion": 3,
+    "Comentario": "Buena comida, pero un poco caro."
+  }
+]

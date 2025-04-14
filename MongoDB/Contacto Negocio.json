@@ -1,0 +1,14 @@
+[
+  {
+    "_id": 1,
+    "Email_negocio": "contacto@negocio1.com",
+    "Telefono": "+34 600 123 456",
+    "Disponibilidad": "Lunes a Viernes de 9:00 a 18:00"
+  },
+  {
+    "_id": 2,
+    "Email_negocio": "colaboraciones@negocio2.com",
+    "Telefono": "+34 600 987 654",
+    "Disponibilidad": "Sábado y Domingo de 10:00 a 16:00"
+  }
+]

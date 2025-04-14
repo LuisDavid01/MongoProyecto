@@ -1,0 +1,12 @@
+[
+  {
+    "_id": 1,
+    "Id_local": "local001",
+    "Ruta_imagen": "imagenes/local001/foto1.jpg"
+  },
+  {
+    "_id": 2,
+    "Id_local": "local002",
+    "Ruta_imagen": "imagenes/local002/foto2.jpg"
+  }
+]

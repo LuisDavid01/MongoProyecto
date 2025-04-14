@@ -1,0 +1,22 @@
+[
+  {
+    "_id": 1,
+    "Telefono": "+34 600 123 456",
+    "Correo_electronico": "contacto@example.com",
+    "Redes_sociales": {
+      "Facebook": "https://www.facebook.com/ejemplo",
+      "Twitter": "https://www.twitter.com/ejemplo",
+      "Instagram": "https://www.instagram.com/ejemplo"
+    }
+  },
+  {
+    "_id": 2,
+    "Telefono": "+34 600 654 321",
+    "Correo_electronico": "info@ejemplo.com",
+    "Redes_sociales": {
+      "Facebook": "https://www.facebook.com/ejemplo2",
+      "Twitter": "https://www.twitter.com/ejemplo2",
+      "LinkedIn": "https://www.linkedin.com/company/ejemplo2"
+    }
+  }
+]

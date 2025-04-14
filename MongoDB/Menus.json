@@ -1,0 +1,20 @@
+[
+  {
+    "_id": 1,
+    "Nombre_comida": "Pizza Margherita",
+    "Precio": 8.99,
+    "Tipo_comida": "Italiana"
+  },
+  {
+    "_id": 2,
+    "Nombre_comida": "Hamburguesa Clásica",
+    "Precio": 7.50,
+    "Tipo_comida": "Americana"
+  },
+  {
+    "_id": 3,
+    "Nombre_comida": "Sushi Variado",
+    "Precio": 12.00,
+    "Tipo_comida": "Japonesa"
+  }
+]

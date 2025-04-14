@@ -1,0 +1,20 @@
+[
+  {
+    "_id": 1,
+    "Nombre": "Restaurante El Buen Sabor",
+    "Categoria": "Restaurantes",
+    "Descripcion": "Un restaurante que ofrece comida local y tradicional con ingredientes frescos."
+  },
+  {
+    "_id": 2,
+    "Nombre": "Café Aroma",
+    "Categoria": "Cafeterías",
+    "Descripcion": "Café y pastelería en un ambiente relajado, ideal para reuniones y trabajo."
+  },
+  {
+    "_id": 3,
+    "Nombre": "Bar La Esquina",
+    "Categoria": "Bares",
+    "Descripcion": "Bar con una amplia selección de cócteles y música en vivo."
+  }
+]

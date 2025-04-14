@@ -1,0 +1,12 @@
+[
+    {
+      $lookup:
+        {
+          from: "Categorias",
+          localField: "Categoria",
+          foreignField: "Nombre",
+          as: "Categoria_descripcion"
+        }
+    }
+  ]
+  

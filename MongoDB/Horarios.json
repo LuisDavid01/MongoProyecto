@@ -1,0 +1,18 @@
+[
+  {
+    "_id": 1,
+    "Nombre_restaurante": "Restaurante La Esquina",
+    "Fecha": "2025-04-25",
+    "Hora_apertura": "12:00",
+    "Hora_cierre": "23:00",
+    "Cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 2,
+    "Nombre_restaurante": "Café Central",
+    "Fecha": "2025-04-25",
+    "Hora_apertura": "08:00",
+    "Hora_cierre": "20:00",
+    "Cierre_por_ocasion_especial": true
+  }
+]
