@@ -2,46 +2,49 @@
 
 @if (Model == null || !Model.Any())
 {
-    <p>No hay categorias para mostrar.</p>
+    <p>No hay categorías para mostrar.</p>
 }
 else
 {
-    <h2 class="text-center">Consulta de categorias</h2>
-    <a class="btn btn-success " asp-area="" asp-controller="Categorias" asp-action="CrearCategoria"> Crear categoria</a>
-    <table class="table">
-        <thead>
+    <h2 class="text-center mb-4">Consulta de Categorías</h2>
+
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Categorias" asp-action="CrearCategoria">
+        <i class="bi bi-plus-circle"></i> Crear Categoría
+    </a>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
             <tr>
                 <th>Nombre</th>
-                <th>Descripcion</th>
+                <th>Descripción</th>
                 <th>Ejemplos</th>
-                <th></th>
-
-
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var Categorias in Model)
+            @foreach (var categoria in Model)
             {
                 <tr>
-                    <td>@Categorias.Nombre</td>
-                    <td>@Categorias.Descripcion</td>
+                    <td>@categoria.Nombre</td>
+                    <td>@categoria.Descripcion</td>
                     <td>
-                        @for(int i = 0; i < Categorias.Ejemplos.Count; i++){
-                            <p>@Categorias.Ejemplos[i]</p>
+                        @for (int i = 0; i < categoria.Ejemplos.Count; i++)
+                        {
+                            <p>@categoria.Ejemplos[i]</p>
                         }
                     </td>
                     <td>
+                        <a class="btn btn-warning" asp-area="" asp-controller="Categorias" asp-route-id="@categoria._id" asp-action="VerCategoria">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
 
-                        <a class="btn btn-success " asp-area="" asp-controller="Categorias" asp-route-id="@Categorias._id" asp-action="VerCategoria"> Editar Categoria</a>
                         <form asp-controller="Categorias" asp-action="EliminarCategoria" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@Categorias._id" />
-                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este categoria?');">Eliminar categoria</button>
+                            <input type="hidden" name="id" value="@categoria._id" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar esta categoría?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
                         </form>
-
                     </td>
-
-                    
-
                 </tr>
             }
         </tbody>

@@ -1,30 +1,32 @@
 ﻿@model CategoriasModel
+
 <form asp-controller="Categorias" asp-action="EditarCategoria">
-    <div class="row">
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Ver y Editar Categoría</h2>
 
-        <h2 class="text-center">Ver y editar usuario</h2>
-        <div class="form-group col-md-12 mb-4">
-            <input type="text" required class="form-control input-lg" asp-for="Nombre" placeholder="nombre">
-        </div>
-        <div class="form-group col-md-12 mb-4">
-            <textarea  class="form-control  input-lg" asp-for="Descripcion" placeholder="Descripcion">
-            </textarea>
-        </div>
-        @for(int i = 0; i < Model.Ejemplos.Count; i++){
-            <div class="form-group col-md-12 ">
-                <input type="text" class="form-control input-lg" name="Ejemplos[i]" asp-for="Ejemplos[i]" placeholder="Ejemplo" />
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-group mb-4">
+                    <input type="text" required class="form-control form-control-lg" asp-for="Nombre" placeholder="Nombre de la categoría" />
+                </div>
+
+                <div class="form-group mb-4">
+                    <textarea class="form-control form-control-lg" asp-for="Descripcion" placeholder="Descripción"></textarea>
+                </div>
+
+                @for (int i = 0; i < Model.Ejemplos.Count; i++)
+                {
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control form-control-lg" name="Ejemplos[i]" asp-for="Ejemplos[i]" placeholder="Ejemplo" />
+                    </div>
+                }
+
+                <input type="hidden" asp-for="_id" />
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Editar Categoría</button>
+                </div>
             </div>
-
-        }
-        
-       
-        <input type="hidden" asp-for="_id" />
-
-        <div class="col-md-12">
-
-            <button type="submit" class="btn btn-primary btn-pill mb-4">editar</button>
-
-
         </div>
     </div>
 </form>
