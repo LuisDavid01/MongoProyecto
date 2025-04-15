@@ -1,4 +1,4 @@
-using MongoProyectoWeb.servicios;
+//using MongoProyectoWeb.servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +8,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
 // Servicio de Seguridad
-builder.Services.AddScoped<ISeguridad, Seguridad>();
+//builder.Services.AddScoped<ISeguridad, Seguridad>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
