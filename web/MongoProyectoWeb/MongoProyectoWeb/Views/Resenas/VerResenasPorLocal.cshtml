@@ -1,0 +1,28 @@
+﻿@model MongoProyectoWeb.Models.LocalConResenasModel
+
+<h1>@Model.Nombre</h1>
+<p>Descripción: @Model.Descripcion</p>
+
+
+<h2>Reseñas</h2>
+
+<div class="row">
+    @foreach (var resena in Model.Resenas)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Calificación: @resena.Calificacion estrellas</h5>
+                    <p class="card-text">Comentario: @resena.Comentario</p>
+                    <div class="d-flex">
+                        <a class="btn btn-success " asp-area="" asp-controller="Resenas" asp-route-id="@resena._id" asp-action="VerResena"> Editar Reseña</a>
+                        <form asp-controller="Resenas" asp-action="EliminarResena" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@resena._id" />
+                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar esta Reseña?');">Eliminar Reseña</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
