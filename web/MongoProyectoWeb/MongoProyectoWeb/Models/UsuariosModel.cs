@@ -10,5 +10,6 @@ namespace MongoProyectoWeb.Models
 
         public string? contraseña { get; set; } 
         public string? foto_de_perfil { get; set; }
+        public string? RecaptchaToken { get; set; }
     }
 }
