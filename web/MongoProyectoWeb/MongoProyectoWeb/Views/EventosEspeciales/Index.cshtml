@@ -1,0 +1,40 @@
+﻿@model List<MongoProyectoWeb.Models.EventosEspecialesModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p class="alert alert-warning text-center">No hay eventos especiales para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center mb-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem;">Eventos Especiales</h2>
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="EventosEspeciales" asp-action="CrearEventosEspeciales">
+        <i class="bi bi-plus-circle"></i> Crear Evento
+    </a>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var evento in Model)
+        {
+            <div class="col">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@evento.nombre_evento</h5>
+                        <p class="card-text">@evento.descripcion</p>
+                        <p class="card-text"><strong>Fecha:</strong> @evento.fecha</p>
+                        <p class="card-text"><strong>Hora:</strong> @evento.hora</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-warning btn-sm" asp-area="" asp-controller="EventosEspeciales" asp-route-id="@evento._id" asp-action="VerEventosEspeciales">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+                        <form asp-controller="EventosEspeciales" asp-action="EliminarEventosEspeciales" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@evento._id" />
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Seguro que quieres eliminar este evento?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

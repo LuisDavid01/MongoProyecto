@@ -1,15 +1,15 @@
 [
   {
     "_id": 1,
-    "Id_local": "local001",
-    "Nombre_evento": "Noche de Jazz",
-    "Descripcion": "Concierto de jazz en vivo con artistas locales.",
-    "Fecha": "2025-05-10",
-    "Hora": "21:00"
+    "id_local": "local001",
+    "nombre_evento": "Noche de Jazz",
+    "descripcion": "Concierto de jazz en vivo con artistas locales.",
+    "fecha": "2025-05-10",
+    "hora": "21:00"
   },
   {
     "_id": 2,
-    "Id_local": "local002",
+    "id_local": "local002",
     "Nombre_evento": "Fiesta Temática de los 80",
     "Descripcion": "Noche temática con música y decoración inspiradas en los años 80.",
     "Fecha": "2025-05-15",
