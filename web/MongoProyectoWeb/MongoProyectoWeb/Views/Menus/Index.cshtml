@@ -1,0 +1,45 @@
+﻿@model List<MenusModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay Menus para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center">Consulta de Menus</h2>
+    <a class="btn btn-success " asp-area="" asp-controller="Menus" asp-action="CrearMenus"> Crear Menus</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Direccion</th>
+                <th>Provincia</th>
+
+                <th></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var menus in Model)
+            {
+                <tr>
+                    <td>@menus.nombre_comida</td>
+                    <td>@menus.precio</td>
+                    <td>@menus.tipo_comida</td>
+                    <td>
+
+                        <a class="btn btn-success " asp-area="" asp-controller="menus" asp-route-id="@menus._id" asp-action="VerMenus"> Editar Menus</a>
+                        <form asp-controller="Menus" asp-action="EliminarMenus" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@menus._id" />
+                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este Menus?');">Eliminar Menus</button>
+                        </form>
+
+                    </td>
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}

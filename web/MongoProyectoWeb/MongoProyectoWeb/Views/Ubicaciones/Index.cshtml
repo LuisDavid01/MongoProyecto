@@ -27,9 +27,9 @@ else
                     <td>@ubicaciones.provincia</td>
                     <td>
 
-                        <a class="btn btn-success " asp-area="" asp-controller="ubicaciones" asp-route-id="@ubicaciones.id_local" asp-action="VerUbicaciones"> Editar Ubicaciones</a>
+                        <a class="btn btn-success " asp-area="" asp-controller="ubicaciones" asp-route-id="@ubicaciones._id" asp-action="VerUbicaciones"> Editar Ubicaciones</a>
                         <form asp-controller="Ubicaciones" asp-action="EliminarUbicaciones" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@ubicaciones.id_local" />
+                            <input type="hidden" name="id" value="@ubicaciones._id" />
                             <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este Ubicaciones?');">Eliminar Ubicaciones</button>
                         </form>
 

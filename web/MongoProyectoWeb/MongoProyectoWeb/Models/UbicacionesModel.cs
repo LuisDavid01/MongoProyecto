@@ -5,7 +5,7 @@ namespace MongoProyectoWeb.Models
 {
     public class UbicacionesModel : Controller
     {
-        public int? type { get; set; }
+        public int? _id { get; set; }
         public int? id_local { get; set; }
         public string? direccion { get; set; }
         public string? provincia { get; set; }
