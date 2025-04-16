@@ -2,44 +2,37 @@
 
 @if (Model == null || !Model.Any())
 {
-    <p>No hay Ejercicios para mostrar.</p>
+    <p class="alert alert-warning text-center">No hay usuarios para mostrar.</p>
 }
 else
 {
-    <h2 class="text-center">Consultar de usuarios</h2>
-    <a class="btn btn-success " asp-area="" asp-controller="Usuarios" asp-action="CrearUsuario"> CrearUsuario</a>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>nombre</th>
-                <th>correo</th>
-                <th>foto de perfil</th>
-                <th></th>
-                
+    <h2 class="text-center mb-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem;">Consultar Usuarios</h2>
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Usuarios" asp-action="CrearUsuario">
+            <i class="bi bi-plus-circle"></i> Crear Usuario</a>
 
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var UsuariosModel in Model)
-            {
-                <tr>
-                    <td>@UsuariosModel.nombre</td>
-                    <td>@UsuariosModel.correo</td>
-                    <td><img alt="foto de perfil" src="@UsuariosModel.foto_de_perfil"  /></td>
-                    <td>
-
-                        <a class="btn btn-success " asp-area="" asp-controller="Usuarios" asp-route-id="@UsuariosModel._id" asp-action="VerUsuario"> Editar usuario</a>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var UsuariosModel in Model)
+        {
+            <div class="col">
+                <div class="card shadow-sm h-100">
+                    <img src="@UsuariosModel.foto_de_perfil" class="card-img-top" alt="Foto de perfil" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@UsuariosModel.nombre</h5>
+                        <p class="card-text">Correo: @UsuariosModel.correo</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-warning btn-sm" asp-area="" asp-controller="Usuarios" asp-route-id="@UsuariosModel._id" asp-action="VerUsuario">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
                         <form asp-controller="Usuarios" asp-action="EliminarUsuario" method="post" style="display:inline;">
                             <input type="hidden" name="id" value="@UsuariosModel._id" />
-                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este usuario?');">Eliminar usuario</button>
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Seguro que quieres eliminar este usuario?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
                         </form>
-
-                    </td>
-                    
-
-
-                </tr>
-            }
-        </tbody>
-    </table>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 }

@@ -1,50 +1,52 @@
 ﻿@model MongoProyectoWeb.Models.ResenasModel
 
 <form asp-controller="Resenas" asp-action="CrearResena">
-    <div class="row">
-        <h2 class="text-center">Agregar Reseña</h2>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Agregar Reseña</h2>
 
-        <div class="form-group col-md-12 mb-4">
-            <input type="text" required class="form-control input-lg" asp-for="_id" placeholder="id">
-        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-group mb-3">
+                    <input type="text" required class="form-control form-control-lg" asp-for="_id" placeholder="ID de la reseña" />
+                </div>
 
-        <!-- Selección de usuario -->
-        <div class="form-group col-md-12 mb-4">
-            <label asp-for="IdUsuario">Usuario</label>
-            <select asp-for="IdUsuario" class="form-control" required>
-                <option value="">Seleccione un usuario</option>
-                @foreach (var usuario in ViewBag.Usuarios)
-                {
-                    <option value="@usuario.Value">@usuario.Text</option>
-                }
-            </select>
-        </div>
+                <!-- Selección de usuario -->
+                <div class="form-group mb-3">
+                    <label asp-for="IdUsuario">Usuario</label>
+                    <select asp-for="IdUsuario" class="form-control form-control-lg" required>
+                        <option value="">Seleccione un usuario</option>
+                        @foreach (var usuario in ViewBag.Usuarios)
+                        {
+                            <option value="@usuario.Value">@usuario.Text</option>
+                        }
+                    </select>
+                </div>
 
+                <input type="hidden" asp-for="IdLocal" />
 
-        <input type="hidden" asp-for="IdLocal" />
+                <!-- Calificación -->
+                <div class="form-group mb-3">
+                    <label asp-for="Calificacion">Calificación</label>
+                    <select asp-for="Calificacion" class="form-control form-control-lg">
+                        <option value="0">0 estrellas</option>
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                    </select>
+                </div>
 
-        <!-- Calificación -->
-        <div class="form-group col-md-12 mb-4">
-            <label asp-for="Calificacion">Calificación</label>
-            <select asp-for="Calificacion" class="form-control">
-                <option value="0">0 estrellas</option>
-                <option value="1">1 estrella</option>
-                <option value="2">2 estrellas</option>
-                <option value="3">3 estrellas</option>
-                <option value="4">4 estrellas</option>
-                <option value="5">5 estrellas</option>
-            </select>
-        </div>
+                <!-- Comentario -->
+                <div class="form-group mb-3">
+                    <label asp-for="Comentario">Comentario</label>
+                    <textarea class="form-control form-control-lg" asp-for="Comentario" placeholder="Escriba su comentario aquí"></textarea>
+                </div>
 
-        <!-- Comentario -->
-        <div class="form-group col-md-12 mb-4">
-            <label asp-for="Comentario">Comentario</label>
-            <textarea class="form-control" asp-for="Comentario" placeholder="comentario"></textarea>
-        </div>
-
-        <!-- Botón -->
-        <div class="col-md-12">
-            <button type="submit" class="btn btn-primary btn-pill mb-4">Guardar reseña</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Guardar Reseña</button>
+                </div>
+            </div>
         </div>
     </div>
 </form>

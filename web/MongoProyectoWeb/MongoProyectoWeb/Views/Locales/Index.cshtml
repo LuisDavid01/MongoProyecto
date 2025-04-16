@@ -7,7 +7,7 @@
 else
 {
     <h2 class="text-center mb-4">Consultar Locales</h2>
-    <a class="btn btn-success mb-3" asp-area="" asp-controller="Locales" asp-action="CrearLocal">Crear Local</a>
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Locales" asp-action="CrearLocal"><i class="bi bi-plus-circle"></i> Crear Local</a>
 
     <div class="row">
         @foreach (var LocalesModel in Model)
@@ -28,11 +28,11 @@ else
                         </div>
 
                         <div class="d-flex mt-3">
-                            <a class="btn btn-warning btn-sm" asp-area="" asp-controller="Locales" asp-route-id="@LocalesModel._id" asp-action="VerLocal">Editar Local</a>
+                            <a class="btn btn-warning btn-sm" asp-area="" asp-controller="Locales" asp-route-id="@LocalesModel._id" asp-action="VerLocal"><i class="bi bi-pencil-square"> </i>Editar Local</a>
 
                             <form asp-controller="Locales" asp-action="EliminarLocal" method="post" style="display:inline;">
                                 <input type="hidden" name="id" value="@LocalesModel._id" />
-                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Seguro que quieres eliminar este Local?');">Eliminar Local</button>
+                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Seguro que quieres eliminar este Local?');"><i class="bi bi-trash"></i> Eliminar Local</button>
                             </form>
                         </div>
                     </div>
