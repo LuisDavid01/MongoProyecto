@@ -37,16 +37,13 @@ app.use(express.json());
 // Rutas
 app.use('/api', UsuariosRoutes);
 app.use('/api', CategoriasRoutes);
-app.use('/api',MenusRoutes);
+app.use('/api', MenusRoutes);
 app.use('/api', UbicacionesRoutes);
 app.use('/api', HorariosRoutes);
 app.use('/api', FotosRoutes);
 app.use('/api', LocalesRoutes);
 app.use('/api', EventosEspecialesRoutes);
 app.use('/api', ContactosRoutes);
-app.use('/api', ContactoNegocio);
-app.use('/api', ContactoNegocio);
-app.use('/api', ResenasRoutes);
 app.use('/api', ContactoNegocio);
 app.use('/api', ResenasRoutes);
 app.use('/api', ReservasRoutes);
