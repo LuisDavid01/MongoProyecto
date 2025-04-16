@@ -6,10 +6,10 @@ const Fotos = require('../models/FotosModel');
 class FotosService {
   async createFotos(data) {
     
-    const Fotos = new Fotos(data);
+    const Foto = new Fotos(data);
      
-    await Fotos.save();
-    return Fotos;
+    await Foto.save();
+    return Foto;
   }
  
   async getFotos(id) {

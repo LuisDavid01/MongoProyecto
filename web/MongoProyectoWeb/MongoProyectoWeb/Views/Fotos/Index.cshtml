@@ -1,0 +1,52 @@
+﻿@model List<FotosModel>
+
+@if (Model == null || !Model.Any())
+{
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Fotos" asp-action="CrearFoto">
+        <i class="bi bi-plus-circle"></i> Crear Foto
+    </a>
+    <p>No hay fotos para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center mb-4">Consulta de Fotos</h2>
+
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Fotos" asp-action="CrearFoto">
+        <i class="bi bi-plus-circle"></i> Crear Foto
+    </a>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Local</th>
+                <th>Ruta de la imagen</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Foto in Model)
+            {
+                <tr>
+                    <td>@Foto.Id_local</td>
+                    <td>
+                        <img class="img-fluid" src="@Foto.Ruta_imagen" alt="foto para el local" width="340" />
+                    
+                    </td>
+
+                    <td>
+                        <a class="btn btn-warning" asp-area="" asp-controller="Fotos" asp-route-id="@Foto._id" asp-action="VerFoto">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+
+                        <form asp-controller="Fotos" asp-action="EliminarFoto" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@Foto._id" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar esta Foto?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

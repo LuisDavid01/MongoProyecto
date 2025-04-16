@@ -1,0 +1,53 @@
+﻿@model List<ContactoNegocioModel>
+
+@if (Model == null || !Model.Any())
+{
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="ContactoNegocio" asp-action="CrearContactoNegocio">
+        <i class="bi bi-plus-circle"></i> Crear contacto para negocios
+    </a>
+    <p>No hay contactos de negocios para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center mb-4">Consulta de ContactoNegocio</h2>
+
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="ContactoNegocio" asp-action="CrearContactoNegocio">
+        <i class="bi bi-plus-circle"></i> Crear contacto para negocios
+    </a>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Local</th>
+                <th>Email negocio</th>
+                <th>Numero del negocio</th>
+                <th>disponibilidad</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ContactoNegocio in Model)
+            {
+                <tr>
+                    <td>@ContactoNegocio.Id_local</td>
+                    <td>@ContactoNegocio.email_negocio</td>
+                    <td>@ContactoNegocio.telefono_negocio</td>
+                    <td>@ContactoNegocio.disponibilidad</td>
+
+                    <td>
+                        <a class="btn btn-warning" asp-area="" asp-controller="ContactoNegocio" asp-route-id="@ContactoNegocio._id" asp-action="VerContactoNegocio">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+
+                        <form asp-controller="ContactoNegocio" asp-action="EliminarContactoNegocio" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@ContactoNegocio._id" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar este ContactoNegocio?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

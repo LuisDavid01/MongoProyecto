@@ -1,0 +1,54 @@
+﻿@model List<HorariosModel>
+
+@if (Model == null || !Model.Any())
+{
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Horarios" asp-action="CrearHorario">
+        <i class="bi bi-plus-circle"></i> Crear Horario
+    </a>
+    <p>No hay Horarios para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center mb-4">Consulta de Horarios</h2>
+
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Horarios" asp-action="CrearHorario">
+        <i class="bi bi-plus-circle"></i> Crear Horario
+    </a>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Local</th>
+                <th>Dia de la semana</th>
+                <th>Fecha apertura</th>
+                <th>fecha de cierre</th>
+                <th>Cierre por ocasion especial</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Horario in Model)
+            {
+                <tr>
+                    <td>@Horario.IdRestaurante</td>
+                    <td>@Horario.Dia_semana</td>
+                    <td>@Horario.Hora_apertura</td>
+                    <td>@Horario.Hora_cierre</td>
+                    <td>@Horario.Cierre_por_ocasion_especial</td>
+                    <td>
+                        <a class="btn btn-warning" asp-area="" asp-controller="Horarios" asp-route-id="@Horario._id" asp-action="VerHorario">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+
+                        <form asp-controller="Horarios" asp-action="EliminarHorario" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@Horario._id" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar este horario?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

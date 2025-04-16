@@ -21,13 +21,14 @@ const CategoriasRoutes = require('./routes/CategoriasRoutes');
 const MenusRoutes = require('./routes/MenusRoutes');
 const UbicacionesRoutes = require('./routes/UbicacionesRoutes');
 const HorariosRoutes = require('./routes/HorariosRoutes');
-const FotosRoutes = require('./routes/FotoRoutes');
+
 const LocalesRoutes = require('./routes/LocalesRoutes');
 const EventosEspecialesRoutes = require('./routes/EventosEspecialesRoutes');
 const ContactosRoutes = require('./routes/ContactosRoutes');
 const ContactoNegocio = require('./routes/ContactoNegocioRoutes');
 const ResenasRoutes = require('./routes/ResenasRoutes');
 const ReservasRoutes = require('./routes/ReservasRoutes');
+const FotosRoutes = require('./routes/FotosRoutes');
 const app = express();
 //se conecta la base de datos al correr el script
 connectDB();
@@ -40,8 +41,8 @@ app.use('/api', CategoriasRoutes);
 app.use('/api', MenusRoutes);
 app.use('/api', UbicacionesRoutes);
 app.use('/api', HorariosRoutes);
-app.use('/api', FotosRoutes);
 app.use('/api', LocalesRoutes);
+app.use('/api', FotosRoutes);
 app.use('/api', EventosEspecialesRoutes);
 app.use('/api', ContactosRoutes);
 app.use('/api', ContactoNegocio);

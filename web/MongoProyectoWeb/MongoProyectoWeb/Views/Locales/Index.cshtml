@@ -2,7 +2,8 @@
 
 @if (Model == null || !Model.Any())
 {
-    <p>No hay Ejercicios para mostrar.</p>
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Locales" asp-action="CrearLocal"><i class="bi bi-plus-circle"></i> Crear Local</a>
+    <p>No hay locales para mostrar.</p>
 }
 else
 {

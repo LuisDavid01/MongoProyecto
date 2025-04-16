@@ -16,6 +16,25 @@ namespace MongoProyectoWeb.Controllers
             _httpClient = httpClient;
             _configuration = configuration;
         }
+        //accion para ver todas las reseñas
+        [HttpGet]
+        public IActionResult Index()
+        {
+
+            using (var http = _httpClient.CreateClient())
+            {
+                var url = _configuration.GetSection("Variables:urlWebApi").Value + "Resenas/0";
+                var response = http.GetAsync(url).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = response.Content.ReadFromJsonAsync<List<ResenasModel>>().Result;
+
+                    return View(result);
+                }
+                return View(null);
+
+            }
+        }
 
         // Acción para obtener un local con sus reseñas
         [HttpGet]
