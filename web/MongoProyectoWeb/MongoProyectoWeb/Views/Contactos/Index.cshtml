@@ -1,0 +1,51 @@
+﻿@model List<ContactosModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay Contactos para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center">Consulta de Contactos</h2>
+    <a class="btn btn-success " asp-area="" asp-controller="Contactos" asp-action="CrearContactos"> Crear Contactos</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>telefono</th>
+                <th>correo_electronico</th>
+                
+                <th></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Contactos in Model)
+            {
+                <tr>
+                    <td>@Contactos.</td>
+                    <td>@Contactos.telefono</td>
+                    <td>@Contactos.correo_electronico</td>
+                    <td>
+                        @for (int i = 0; i < Contactos.redes_sociales.Count; i++)
+                        {
+                            <p>@Contactos.redes_sociales[i]</p>
+                        }
+                    </td>
+                    <td>
+
+                        <a class="btn btn-success " asp-area="" asp-controller="Contactos" asp-route-id="@Contactos._id" asp-action="VerContactos"> Editar Contactos</a>
+                        <form asp-controller="Contactos" asp-action="EliminarContactos" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@Contactos._id" />
+                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este Contactos?');">Eliminar Contactos</button>
+                        </form>
+
+                    </td>
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
