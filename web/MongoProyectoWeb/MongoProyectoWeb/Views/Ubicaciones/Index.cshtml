@@ -1,0 +1,44 @@
+﻿@model List<UbicacionesModel>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay Ubicaciones para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center">Consulta de Ubicaciones</h2>
+    <a class="btn btn-success " asp-area="" asp-controller="Ubicaciones" asp-action="CrearUbicaciones"> Crear Ubicaciones</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Direccion</th>
+                <th>Provincia</th>
+
+                <th></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ubicaciones in Model)
+            {
+                <tr>
+                    <td>@ubicaciones.direccion</td>
+                    <td>@ubicaciones.provincia</td>
+                    <td>
+
+                        <a class="btn btn-success " asp-area="" asp-controller="ubicaciones" asp-route-id="@ubicaciones.id_local" asp-action="VerUbicaciones"> Editar Ubicaciones</a>
+                        <form asp-controller="Ubicaciones" asp-action="EliminarUbicaciones" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@ubicaciones.id_local" />
+                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este Ubicaciones?');">Eliminar Ubicaciones</button>
+                        </form>
+
+                    </td>
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
