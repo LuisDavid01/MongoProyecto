@@ -1,14 +1,72 @@
 [
   {
     "_id": 1,
-    "Email_negocio": "contacto@negocio1.com",
-    "Telefono": "+34 600 123 456",
-    "Disponibilidad": "Lunes a Viernes de 9:00 a 18:00"
+    "id_local": 1,
+    "email_negocio": "barriolindora@gmail.es",
+    "telefono_negocio": "+506 8888-9999",
+    "disponibilidad": "8:00 am hasta las 11:00 pm"
   },
   {
     "_id": 2,
-    "Email_negocio": "colaboraciones@negocio2.com",
-    "Telefono": "+34 600 987 654",
-    "Disponibilidad": "Sábado y Domingo de 10:00 a 16:00"
+    "id_local": 2,
+    "email_negocio": "saboresdelvalle@gmail.es",
+    "telefono_negocio": "+506 8777-8888",
+    "disponibilidad": "7:00 am hasta las 10:00 pm"
+  },
+  {
+    "_id": 3,
+    "id_local": 3,
+    "email_negocio": "costasol@gmail.es",
+    "telefono_negocio": "+506 8666-7777",
+    "disponibilidad": "9:00 am hasta las 12:00 am"
+  },
+  {
+    "_id": 4,
+    "id_local": 4,
+    "email_negocio": "fuegolatino@gmail.es",
+    "telefono_negocio": "+506 8555-6666",
+    "disponibilidad": "10:00 am hasta las 11:00 pm"
+  },
+  {
+    "_id": 5,
+    "id_local": 5,
+    "email_negocio": "rinconmarino@gmail.es",
+    "telefono_negocio": "+506 8444-5555",
+    "disponibilidad": "11:00 am hasta las 10:00 pm"
+  },
+  {
+    "_id": 6,
+    "id_local": 6,
+    "email_negocio": "casadelpan@gmail.es",
+    "telefono_negocio": "+506 8333-4444",
+    "disponibilidad": "6:00 am hasta las 9:00 pm"
+  },
+  {
+    "_id": 7,
+    "id_local": 7,
+    "email_negocio": "sazoncriollo@gmail.es",
+    "telefono_negocio": "+506 8222-3333",
+    "disponibilidad": "8:00 am hasta las 10:00 pm"
+  },
+  {
+    "_id": 8,
+    "id_local": 8,
+    "email_negocio": "luzdeasia@gmail.es",
+    "telefono_negocio": "+506 8111-2222",
+    "disponibilidad": "12:00 pm hasta las 11:00 pm"
+  },
+  {
+    "_id": 9,
+    "id_local": 9,
+    "email_negocio": "parrilladelcerro@gmail.es",
+    "telefono_negocio": "+506 8000-1111",
+    "disponibilidad": "11:00 am hasta las 12:00 am"
+  },
+  {
+    "_id": 10,
+    "id_local": 10,
+    "email_negocio": "jardindelsol@gmail.es",
+    "telefono_negocio": "+506 8999-0000",
+    "disponibilidad": "9:00 am hasta las 10:00 pm"
   }
 ]

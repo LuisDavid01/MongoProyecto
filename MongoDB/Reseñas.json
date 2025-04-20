@@ -1,16 +1,72 @@
 [
   {
     "_id": 1,
-    "Id_usuario": "user001",
-    "Id_local": "local001",
-    "Calificacion": 4.5,
-    "Comentario": "Excelente ambiente y servicio."
+    "id_usuario": 1,
+    "id_local": 1,
+    "calificacion": 4,
+    "comentario": "Excelente comida mexicana, los tacos son auténticos."
   },
   {
     "_id": 2,
-    "Id_usuario": "user002",
-    "Id_local": "local002",
-    "Calificacion": 3,
-    "Comentario": "Buena comida, pero un poco caro."
+    "id_usuario": 2,
+    "id_local": 2,
+    "calificacion": 5,
+    "comentario": "El sushi estaba fresco y el servicio fue impecable."
+  },
+  {
+    "_id": 3,
+    "id_usuario": 3,
+    "id_local": 3,
+    "calificacion": 3,
+    "comentario": "La pizza estaba buena, pero el lugar estaba muy lleno."
+  },
+  {
+    "_id": 4,
+    "id_usuario": 4,
+    "id_local": 4,
+    "calificacion": 4,
+    "comentario": "El curry tenía un gran sabor, volvería por más."
+  },
+  {
+    "_id": 5,
+    "id_usuario": 5,
+    "id_local": 5,
+    "calificacion": 5,
+    "comentario": "El ceviche es el mejor que he probado, muy fresco."
+  },
+  {
+    "_id": 6,
+    "id_usuario": 6,
+    "id_local": 6,
+    "calificacion": 4,
+    "comentario": "Gran ambiente y croissants deliciosos."
+  },
+  {
+    "_id": 7,
+    "id_usuario": 7,
+    "id_local": 7,
+    "calificacion": 3,
+    "comentario": "El pad thai estaba bien, pero un poco salado."
+  },
+  {
+    "_id": 8,
+    "id_usuario": 8,
+    "id_local": 8,
+    "calificacion": 5,
+    "comentario": "La paella fue espectacular, muy recomendable."
+  },
+  {
+    "_id": 9,
+    "id_usuario": 9,
+    "id_local": 9,
+    "calificacion": 4,
+    "comentario": "Las empanadas son excelentes, pero el servicio fue lento."
+  },
+  {
+    "_id": 10,
+    "id_usuario": 10,
+    "id_local": 10,
+    "calificacion": 5,
+    "comentario": "El falafel estaba perfecto, gran experiencia."
   }
 ]

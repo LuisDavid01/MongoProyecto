@@ -1,18 +1,162 @@
 [
   {
     "_id": 1,
-    "id_local": "local001",
-    "nombre_evento": "Noche de Jazz",
-    "descripcion": "Concierto de jazz en vivo con artistas locales.",
-    "fecha": "2025-05-10",
-    "hora": "21:00"
+    "id_local": 1,
+    "nombre_evento": "Noche de Salsa",
+    "descripcion": "Baile y música latina en vivo.",
+    "fecha": "10/05/2025",
+    "hora": "20:00"
   },
   {
     "_id": 2,
-    "id_local": "local002",
-    "Nombre_evento": "Fiesta Temática de los 80",
-    "Descripcion": "Noche temática con música y decoración inspiradas en los años 80.",
-    "Fecha": "2025-05-15",
-    "Hora": "20:00"
+    "id_local": 1,
+    "nombre_evento": "Cata de Vinos",
+    "descripcion": "Degustación de vinos regionales.",
+    "fecha": "12/05/2025",
+    "hora": "19:00"
+  },
+  {
+    "_id": 3,
+    "id_local": 2,
+    "nombre_evento": "Karaoke Night",
+    "descripcion": "Noche de canto abierto al público.",
+    "fecha": "15/05/2025",
+    "hora": "21:00"
+  },
+  {
+    "_id": 4,
+    "id_local": 2,
+    "nombre_evento": "Tarde de Jazz",
+    "descripcion": "Música jazz en vivo con banda local.",
+    "fecha": "17/05/2025",
+    "hora": "18:00"
+  },
+  {
+    "_id": 5,
+    "id_local": 3,
+    "nombre_evento": "Fiesta Tropical",
+    "descripcion": "Cócteles y ritmos caribeños.",
+    "fecha": "20/05/2025",
+    "hora": "22:00"
+  },
+  {
+    "_id": 6,
+    "id_local": 3,
+    "nombre_evento": "Trivia Gastronómica",
+    "descripcion": "Competencia de preguntas sobre comida.",
+    "fecha": "22/05/2025",
+    "hora": "19:30"
+  },
+  {
+    "_id": 7,
+    "id_local": 4,
+    "nombre_evento": "Noche de Parrilla",
+    "descripcion": "Carnes asadas y música country.",
+    "fecha": "25/05/2025",
+    "hora": "20:00"
+  },
+  {
+    "_id": 8,
+    "id_local": 4,
+    "nombre_evento": "Clase de Cocina",
+    "descripcion": "Taller de cocina italiana práctica.",
+    "fecha": "27/05/2025",
+    "hora": "17:00"
+  },
+  {
+    "_id": 9,
+    "id_local": 5,
+    "nombre_evento": "Sushi Fest",
+    "descripcion": "Degustación de sushi y sake.",
+    "fecha": "30/05/2025",
+    "hora": "19:00"
+  },
+  {
+    "_id": 10,
+    "id_local": 5,
+    "nombre_evento": "Noche de Haiku",
+    "descripcion": "Lectura de poesía y música oriental.",
+    "fecha": "01/06/2025",
+    "hora": "20:30"
+  },
+  {
+    "_id": 11,
+    "id_local": 6,
+    "nombre_evento": "Desayuno Musical",
+    "descripcion": "Música acústica con desayuno buffet.",
+    "fecha": "05/06/2025",
+    "hora": "09:00"
+  },
+  {
+    "_id": 12,
+    "id_local": 6,
+    "nombre_evento": "Tarde de Pan",
+    "descripcion": "Degustación de panes artesanales.",
+    "fecha": "07/06/2025",
+    "hora": "16:00"
+  },
+  {
+    "_id": 13,
+    "id_local": 7,
+    "nombre_evento": "Noche Criolla",
+    "descripcion": "Comida y música tradicional costarricense.",
+    "fecha": "10/06/2025",
+    "hora": "19:00"
+  },
+  {
+    "_id": 14,
+    "id_local": 7,
+    "nombre_evento": "Cine al Aire Libre",
+    "descripcion": "Proyección de película con comida.",
+    "fecha": "12/06/2025",
+    "hora": "20:00"
+  },
+  {
+    "_id": 15,
+    "id_local": 8,
+    "nombre_evento": "Noche de Wok",
+    "descripcion": "Demostración de cocina asiática en vivo.",
+    "fecha": "15/06/2025",
+    "hora": "18:30"
+  },
+  {
+    "_id": 16,
+    "id_local": 8,
+    "nombre_evento": "K-pop Party",
+    "descripcion": "Música y comida inspirada en Corea.",
+    "fecha": "17/06/2025",
+    "hora": "21:00"
+  },
+  {
+    "_id": 17,
+    "id_local": 9,
+    "nombre_evento": "Asado al Atardecer",
+    "descripcion": "Carnes a la parrilla con vista al sunset.",
+    "fecha": "20/06/2025",
+    "hora": "17:30"
+  },
+  {
+    "_id": 18,
+    "id_local": 9,
+    "nombre_evento": "Noche de Blues",
+    "descripcion": "Música blues con cena especial.",
+    "fecha": "22/06/2025",
+    "hora": "20:00"
+  },
+  {
+    "_id": 19,
+    "id_local": 10,
+    "nombre_evento": "Brunch Mediterráneo",
+    "descripcion": "Buffet con sabores del Mediterráneo.",
+    "fecha": "25/06/2025",
+    "hora": "11:00"
+  },
+  {
+    "_id": 20,
+    "id_local": 10,
+    "nombre_evento": "Noche de Tapas",
+    "descripcion": "Variedad de tapas y vinos españoles.",
+    "fecha": "27/06/2025",
+    "hora": "19:00"
   }
 ]

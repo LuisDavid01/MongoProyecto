@@ -1,20 +1,62 @@
 [
   {
     "_id": 1,
-    "Nombre": "Restaurante El Buen Sabor",
-    "Categoria": "Restaurantes",
-    "Descripcion": "Un restaurante que ofrece comida local y tradicional con ingredientes frescos."
+    "nombre": "Sabor del Puerto",
+    "id_categoria": 1,
+    "descripcion": "Mariscos frescos con un toque costero."
   },
   {
     "_id": 2,
-    "Nombre": "Café Aroma",
-    "Categoria": "Cafeterías",
-    "Descripcion": "Café y pastelería en un ambiente relajado, ideal para reuniones y trabajo."
+    "nombre": "La Cueva del Sazón",
+    "id_categoria": 2,
+    "descripcion": "Platillos picantes con especias únicas."
   },
   {
     "_id": 3,
-    "Nombre": "Bar La Esquina",
-    "Categoria": "Bares",
-    "Descripcion": "Bar con una amplia selección de cócteles y música en vivo."
+    "nombre": "Rincón del Haiku",
+    "id_categoria": 3,
+    "descripcion": "Sushi artesanal y sopas orientales."
+  },
+  {
+    "_id": 4,
+    "nombre": "Dragón de Jade",
+    "id_categoria": 4,
+    "descripcion": "Sabores asiáticos con wok al fuego."
+  },
+  {
+    "_id": 5,
+    "nombre": "Especias del Bazar",
+    "id_categoria": 5,
+    "descripcion": "Curries aromáticos y pan recién horneado."
+  },
+  {
+    "_id": 6,
+    "nombre": "Bistró Lune",
+    "id_categoria": 6,
+    "descripcion": "Delicadeza francesa en cada bocado."
+  },
+  {
+    "_id": 7,
+    "nombre": "Calle del Coco",
+    "id_categoria": 7,
+    "descripcion": "Platos tropicales con hierbas frescas."
+  },
+  {
+    "_id": 8,
+    "nombre": "Patio de Olivo",
+    "id_categoria": 8,
+    "descripcion": "Tapas vibrantes y arroces al estilo ibérico."
+  },
+  {
+    "_id": 9,
+    "nombre": "Brasas del Sur",
+    "id_categoria": 9,
+    "descripcion": "Carnes al carbón y masa crujiente."
+  },
+  {
+    "_id": 10,
+    "nombre": "Marea Andina",
+    "id_categoria": 10,
+    "descripcion": "Pescados frescos y guisos montañeses."
   }
 ]

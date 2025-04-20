@@ -1,14 +1,62 @@
 [
   {
     "_id": 1,
-    "Id_local": "local001",
-    "Direccion": "Calle Mayor, 123",
-    "Provincia": "Madrid"
+    "id_local": 1,
+    "direccion": "Calle Central, 50m norte de la plaza",
+    "provincia": "San José"
   },
   {
     "_id": 2,
-    "Id_local": "local002",
-    "Direccion": "Avenida del Libertador, 456",
-    "Provincia": "Barcelona"
+    "id_local": 2,
+    "direccion": "Avenida 2, frente al parque principal",
+    "provincia": "Alajuela"
+  },
+  {
+    "_id": 3,
+    "id_local": 3,
+    "direccion": "Boulevard Los Yoses, edificio azul",
+    "provincia": "San José"
+  },
+  {
+    "_id": 4,
+    "id_local": 4,
+    "direccion": "Calle 3, 100m sur del mercado",
+    "provincia": "Heredia"
+  },
+  {
+    "_id": 5,
+    "id_local": 5,
+    "direccion": "Avenida del Sol, contiguo a la iglesia",
+    "provincia": "Cartago"
+  },
+  {
+    "_id": 6,
+    "id_local": 6,
+    "direccion": "Calle Real, 200m este del gimnasio",
+    "provincia": "Guanacaste"
+  },
+  {
+    "_id": 7,
+    "id_local": 7,
+    "direccion": "Avenida 5, esquina suroeste",
+    "provincia": "Puntarenas"
+  },
+  {
+    "_id": 8,
+    "id_local": 8,
+    "direccion": "Calle del Comercio, frente al banco",
+    "provincia": "Limón"
+  },
+  {
+    "_id": 9,
+    "id_local": 9,
+    "direccion": "Boulevard Central, 150m norte del parque",
+    "provincia": "Alajuela"
+  },
+  {
+    "_id": 10,
+    "id_local": 10,
+    "direccion": "Calle Los Ángeles, 50m oeste de la escuela",
+    "provincia": "San José"
   }
 ]

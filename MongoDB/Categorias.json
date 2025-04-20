@@ -1,26 +1,62 @@
 [
   {
     "_id": 1,
-    "Nombre": "Restaurantes",
-    "Descripcion": "Establecimientos que ofrecen comidas preparadas para el consumo en el lugar o para llevar.",
-    "Ejemplos": ["Restaurante Italiano", "Steakhouse", "Marisquería"]
-  },
-  {
-    "_id": 2,
-    "Nombre": "Cafeterías",
-    "Descripcion": "Lugares especializados en servir café, té y desayunos ligeros o repostería.",
-    "Ejemplos": ["Café de especialidad", "Pastelería francesa", "Tetería"]
-  },
-  {
-    "_id": 3,
     "Nombre": "Food Trucks",
-    "Descripcion": "Vehículos adaptados para preparar y vender comida rápida en la calle.",
+    "Descripcion": "Comida callejera servida desde vehículos móviles.",
     "Ejemplos": ["Tacos al pastor", "Hamburguesas gourmet", "Comida vegana"]
   },
   {
+    "_id": 2,
+    "Nombre": "Marisquerías",
+    "Descripcion": "Especialidades en pescados y mariscos frescos.",
+    "Ejemplos": ["Ceviche de camarón", "Pescado frito", "Coctel de mariscos"]
+  },
+  {
+    "_id": 3,
+    "Nombre": "Pizzerías",
+    "Descripcion": "Pizzas artesanales con variedad de ingredientes.",
+    "Ejemplos": ["Pizza margarita", "Pizza de pepperoni", "Pizza vegetariana"]
+  },
+  {
     "_id": 4,
-    "Nombre": "Bares",
-    "Descripcion": "Establecimientos enfocados en bebidas alcohólicas, a veces con opciones de comida ligera.",
-    "Ejemplos": ["Bar de cocteles", "Pub inglés", "Cantina mexicana"]
+    "Nombre": "Asadores",
+    "Descripcion": "Carnes asadas al carbón o parrilla.",
+    "Ejemplos": ["Ribeye a la parrilla", "Costillas BBQ", "Choripán"]
+  },
+  {
+    "_id": 5,
+    "Nombre": "Sushi Bars",
+    "Descripcion": "Platos japoneses con énfasis en sushi y sashimi.",
+    "Ejemplos": ["Rollos de atún", "Nigiri de salmón", "Sopa miso"]
+  },
+  {
+    "_id": 6,
+    "Nombre": "Taquerías",
+    "Descripcion": "Tacos tradicionales y modernos con diversos rellenos.",
+    "Ejemplos": ["Tacos de carne asada", "Tacos de lengua", "Tacos vegetarianos"]
+  },
+  {
+    "_id": 7,
+    "Nombre": "Cafeterías",
+    "Descripcion": "Bebidas calientes y repostería artesanal.",
+    "Ejemplos": ["Café latte", "Croissant de almendra", "Té matcha"]
+  },
+  {
+    "_id": 8,
+    "Nombre": "Heladerías",
+    "Descripcion": "Postres fríos y helados de sabores variados.",
+    "Ejemplos": ["Helado de mango", "Sorbete de limón", "Cono de chocolate"]
+  },
+  {
+    "_id": 9,
+    "Nombre": "Panaderías",
+    "Descripcion": "Panes y pasteles recién horneados.",
+    "Ejemplos": ["Baguette artesanal", "Concha de vainilla", "Pastel de tres leches"]
+  },
+  {
+    "_id": 10,
+    "Nombre": "Comida Rápida",
+    "Descripcion": "Comidas preparadas rápidamente para llevar.",
+    "Ejemplos": ["Hamburguesa clásica", "Papas fritas", "Nuggets de pollo"]
   }
 ]

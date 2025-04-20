@@ -1,18 +1,162 @@
 [
   {
     "_id": 1,
-    "Nombre_restaurante": "Restaurante La Esquina",
-    "Fecha": "2025-04-25",
-    "Hora_apertura": "12:00",
-    "Hora_cierre": "23:00",
-    "Cierre_por_ocasion_especial": false
+    "id_restaurante": 1,
+    "dia_semana": "Lunes",
+    "hora_apertura": "08:00",
+    "hora_cierre": "22:00",
+    "cierre_por_ocasion_especial": false
   },
   {
     "_id": 2,
-    "Nombre_restaurante": "Café Central",
-    "Fecha": "2025-04-25",
-    "Hora_apertura": "08:00",
-    "Hora_cierre": "20:00",
-    "Cierre_por_ocasion_especial": true
+    "id_restaurante": 1,
+    "dia_semana": "Martes",
+    "hora_apertura": "08:00",
+    "hora_cierre": "22:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 3,
+    "id_restaurante": 1,
+    "dia_semana": "Miercoles",
+    "hora_apertura": "08:00",
+    "hora_cierre": "22:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 4,
+    "id_restaurante": 1,
+    "dia_semana": "Jueves",
+    "hora_apertura": "08:00",
+    "hora_cierre": "22:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 5,
+    "id_restaurante": 1,
+    "dia_semana": "Viernes",
+    "hora_apertura": "08:00",
+    "hora_cierre": "23:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 6,
+    "id_restaurante": 1,
+    "dia_semana": "Sabado",
+    "hora_apertura": "09:00",
+    "hora_cierre": "23:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 7,
+    "id_restaurante": 1,
+    "dia_semana": "Domingo",
+    "hora_apertura": "09:00",
+    "hora_cierre": "20:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 8,
+    "id_restaurante": 2,
+    "dia_semana": "Lunes",
+    "hora_apertura": "07:00",
+    "hora_cierre": "21:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 9,
+    "id_restaurante": 2,
+    "dia_semana": "Martes",
+    "hora_apertura": "07:00",
+    "hora_cierre": "21:00",
+    "cierre_por_ocasion_especial": true
+  },
+  {
+    "_id": 10,
+    "id_restaurante": 2,
+    "dia_semana": "Miercoles",
+    "hora_apertura": "07:00",
+    "hora_cierre": "21:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 11,
+    "id_restaurante": 2,
+    "dia_semana": "Jueves",
+    "hora_apertura": "07:00",
+    "hora_cierre": "21:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 12,
+    "id_restaurante": 2,
+    "dia_semana": "Viernes",
+    "hora_apertura": "07:00",
+    "hora_cierre": "22:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 13,
+    "id_restaurante": 2,
+    "dia_semana": "Sabado",
+    "hora_apertura": "08:00",
+    "hora_cierre": "22:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 14,
+    "id_restaurante": 2,
+    "dia_semana": "Domingo",
+    "hora_apertura": "08:00",
+    "hora_cierre": "19:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 15,
+    "id_restaurante": 3,
+    "dia_semana": "Lunes",
+    "hora_apertura": "10:00",
+    "hora_cierre": "23:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 16,
+    "id_restaurante": 3,
+    "dia_semana": "Martes",
+    "hora_apertura": "10:00",
+    "hora_cierre": "23:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 17,
+    "id_restaurante": 3,
+    "dia_semana": "Miercoles",
+    "hora_apertura": "10:00",
+    "hora_cierre": "23:00",
+    "cierre_por_ocasion_especial": true
+  },
+  {
+    "_id": 18,
+    "id_restaurante": 3,
+    "dia_semana": "Jueves",
+    "hora_apertura": "10:00",
+    "hora_cierre": "23:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 19,
+    "id_restaurante": 3,
+    "dia_semana": "Viernes",
+    "hora_apertura": "10:00",
+    "hora_cierre": "00:00",
+    "cierre_por_ocasion_especial": false
+  },
+  {
+    "_id": 20,
+    "id_restaurante": 3,
+    "dia_semana": "Sabado",
+    "hora_apertura": "11:00",
+    "hora_cierre": "00:00",
+    "cierre_por_ocasion_especial": false
   }
 ]
