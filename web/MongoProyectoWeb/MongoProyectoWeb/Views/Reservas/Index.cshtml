@@ -1,0 +1,49 @@
+﻿@model List<ReservasModel>
+
+@if (Model == null || !Model.Any())
+{
+
+    <p>No hay Reservass para mostrar.</p>
+}
+else
+{
+    <h2 class="text-center mb-4">Consulta de Reseñas</h2>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Usuario</th>
+                <th>local</th>
+                <th>Numero de personas</th>
+                <th>fecha</th>
+                <th>hora</th>
+                <th>descripion</th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Reservas in Model)
+            {
+                <tr>
+
+                    <td>@Reservas.IdUsuario</td>
+                    <td>@Reservas.IdLocal</td>
+                    <td>@Reservas.numero_personas</td>
+                    <td>@Reservas.fecha</td>
+                    <td>@Reservas.hora</td>
+                    <td>@Reservas.descripcion</td>
+                    <td>
+
+                        <form asp-controller="Reservas" asp-action="EliminarResena" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@Reservas._id" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar este Reseña?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

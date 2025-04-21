@@ -74,7 +74,7 @@ class LocalesController {
     try {
       // Obtener el local con sus reservas utilizando agregación
       const local = await LocalesService.getLocalWithReservas(req.params.id);
-      console.log(local);
+
       if (!local || local.length === 0) {
         return res.status(404).json({ error: 'Local not found' });
       }

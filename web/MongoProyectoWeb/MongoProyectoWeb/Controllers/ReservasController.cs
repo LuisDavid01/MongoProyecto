@@ -17,6 +17,25 @@ namespace MongoProyectoWeb.Controllers
             _configuration = configuration;
         }
 
+        //accion para ver todas las rervas
+        [HttpGet]
+        public IActionResult Index()
+        {
+
+            using (var http = _httpClient.CreateClient())
+            {
+                var url = _configuration.GetSection("Variables:urlWebApi").Value + "Reservas/0";
+                var response = http.GetAsync(url).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = response.Content.ReadFromJsonAsync<List<ReservasModel>>().Result;
+
+                    return View(result);
+                }
+                return View(null);
+
+            }
+        }
         // Acción para obtener un local con sus reseñas
         [HttpGet]
         public IActionResult VerReservasPorLocal(int id)

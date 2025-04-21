@@ -3,7 +3,7 @@
     "_id": 1,
     "id_usuario": 1,
     "id_local": 1,
-    "fecha": "15/05/2025",
+    "fecha": "15-05-2025",
     "hora": "19:00",
     "numero_personas": 4,
     "descripcion": "Cena familiar para celebrar un cumpleaños."
@@ -12,7 +12,7 @@
     "_id": 2,
     "id_usuario": 2,
     "id_local": 2,
-    "fecha": "16/05/2025",
+    "fecha": "16-05-2025",
     "hora": "20:30",
     "numero_personas": 2,
     "descripcion": "Cita romántica con menú japonés."
@@ -21,7 +21,7 @@
     "_id": 3,
     "id_usuario": 3,
     "id_local": 3,
-    "fecha": "17/05/2025",
+    "fecha": "17-05-2025",
     "hora": "18:00",
     "numero_personas": 6,
     "descripcion": "Reunión de amigos para disfrutar pizzas."
@@ -30,7 +30,7 @@
     "_id": 4,
     "id_usuario": 4,
     "id_local": 4,
-    "fecha": "18/05/2025",
+    "fecha": "18-05-2025",
     "hora": "19:30",
     "numero_personas": 3,
     "descripcion": "Cena de negocios con comida india."
@@ -39,7 +39,7 @@
     "_id": 5,
     "id_usuario": 5,
     "id_local": 5,
-    "fecha": "19/05/2025",
+    "fecha": "19-05-2025",
     "hora": "20:00",
     "numero_personas": 5,
     "descripcion": "Evento familiar con comida peruana."
@@ -48,7 +48,7 @@
     "_id": 6,
     "id_usuario": 6,
     "id_local": 6,
-    "fecha": "20/05/2025",
+    "fecha": "20-05-2025",
     "hora": "12:00",
     "numero_personas": 2,
     "descripcion": "Almuerzo ligero con especialidades francesas."
@@ -57,7 +57,7 @@
     "_id": 7,
     "id_usuario": 7,
     "id_local": 7,
-    "fecha": "21/05/2025",
+    "fecha": "21-05-2025",
     "hora": "19:00",
     "numero_personas": 4,
     "descripcion": "Cena con amigos para probar comida tailandesa."
@@ -66,7 +66,7 @@
     "_id": 8,
     "id_usuario": 8,
     "id_local": 8,
-    "fecha": "22/05/2025",
+    "fecha": "22-05-2025",
     "hora": "20:00",
     "numero_personas": 8,
     "descripcion": "Celebración de aniversario con paella."
@@ -75,7 +75,7 @@
     "_id": 9,
     "id_usuario": 9,
     "id_local": 9,
-    "fecha": "23/05/2025",
+    "fecha": "23-05-2025",
     "hora": "18:30",
     "numero_personas": 3,
     "descripcion": "Cena casual con asado argentino."
@@ -84,7 +84,7 @@
     "_id": 10,
     "id_usuario": 10,
     "id_local": 10,
-    "fecha": "24/05/2025",
+    "fecha": "24-05-2025",
     "hora": "19:00",
     "numero_personas": 4,
     "descripcion": "Reunión familiar con comida libanesa."
