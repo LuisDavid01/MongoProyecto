@@ -7,25 +7,15 @@ namespace MongoProyectoWeb.Models
         [JsonPropertyName("_id")]
         public int? _id { get; set; }
 
-        [JsonPropertyName("id_usuario")]
-        public int IdUsuario { get; set; }
-
-        [JsonPropertyName("id_local")]
-        public int IdLocal { get; set; }
+        [JsonPropertyName("nombre")]
         public string Nombre { get; set; }
+
+        [JsonPropertyName("id_categoria")]
+        public int? id_categoria { get; set; }
+
+        [JsonPropertyName("descripcion")]
         public string Descripcion { get; set; }
 
-        [JsonPropertyName("fecha")]
-        public string fecha { get; set; }
-
-        [JsonPropertyName("hora")]
-        public string hora { get; set; }
-
-        [JsonPropertyName("numero_personas")]
-        public int numero_personas { get; set; }
-
-        [JsonPropertyName("detalle_descripcion")]
-        public string descripcion { get; set; }
         public List<ReservasModel> Reservas { get; set; }
     }
 }

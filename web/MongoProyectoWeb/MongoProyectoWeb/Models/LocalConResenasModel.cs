@@ -7,19 +7,14 @@ namespace MongoProyectoWeb.Models
         [JsonPropertyName("_id")]
         public int? _id { get; set; }
 
-        [JsonPropertyName("id_usuario")]
-        public int IdUsuario { get; set; }
-
-        [JsonPropertyName("id_local")]
-        public int IdLocal { get; set; }
+        [JsonPropertyName("nombre")]
         public string Nombre { get; set; }
+        [JsonPropertyName("id_categoria")]
+        public int id_categoria { get; set; }
+
+        [JsonPropertyName("descripcion")]
         public string Descripcion { get; set; }
 
-        [JsonPropertyName("calificacion")]
-        public int Calificacion { get; set; }
-
-        [JsonPropertyName("comentario")]
-        public string Comentario { get; set; }
         public List<ResenasModel> Resenas { get; set; }
     }
 }
