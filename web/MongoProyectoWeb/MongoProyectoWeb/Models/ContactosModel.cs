@@ -7,7 +7,7 @@ namespace MongoProyectoWeb.Models
         public int? _id {  get; set; }
         public string telefono { get; set; }
         public string correo_electronico { get; set; }
-        public List<ContactosModel> redes_sociales { get; set; }
+        public RedesSocialesModel redes_sociales { get; set; }
     }
 
 }

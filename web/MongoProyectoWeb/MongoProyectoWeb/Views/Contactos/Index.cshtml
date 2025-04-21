@@ -13,7 +13,9 @@ else
             <tr>
                 <th>telefono</th>
                 <th>correo_electronico</th>
-                
+                <th>Facebook link</th>
+                 <th>Twitter link</th>
+                <th>Instagram link</th>
                 <th></th>
 
 
@@ -23,14 +25,16 @@ else
             @foreach (var Contactos in Model)
             {
                 <tr>
-                    <td>@Contactos.</td>
-                    <td>@Contactos.telefono</td>
+                    <td class="w-10">@Contactos.telefono</td>
                     <td>@Contactos.correo_electronico</td>
                     <td>
-                        @for (int i = 0; i < Contactos.redes_sociales.Count; i++)
-                        {
-                            <p>@Contactos.redes_sociales[i]</p>
-                        }
+                        @Contactos.redes_sociales.Facebook
+                    </td>
+                    <td>
+                        @Contactos.redes_sociales.Twitter
+                    </td>
+                    <td>
+                        @Contactos.redes_sociales.Instagram
                     </td>
                     <td>
 

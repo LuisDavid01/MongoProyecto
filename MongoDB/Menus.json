@@ -3,140 +3,140 @@
     "_id": 1,
     "id_local": 1,
     "nombre_comida": "Tacos al Pastor",
-    "precio": 8.50,
+    "precio": 8,
     "tipo_comida": "Mexicana"
   },
   {
     "_id": 2,
     "id_local": 1,
     "nombre_comida": "Enchiladas Verdes",
-    "precio": 9.00,
+    "precio": 9,
     "tipo_comida": "Mexicana"
   },
   {
     "_id": 3,
     "id_local": 2,
     "nombre_comida": "Sushi Roll Tempura",
-    "precio": 12.00,
+    "precio": 12,
     "tipo_comida": "Japonesa"
   },
   {
     "_id": 4,
     "id_local": 2,
     "nombre_comida": "Ramen de Cerdo",
-    "precio": 10.50,
+    "precio": 10,
     "tipo_comida": "Japonesa"
   },
   {
     "_id": 5,
     "id_local": 3,
     "nombre_comida": "Pizza Margarita",
-    "precio": 11.00,
+    "precio": 11,
     "tipo_comida": "Italiana"
   },
   {
     "_id": 6,
     "id_local": 3,
     "nombre_comida": "Lasaña Boloñesa",
-    "precio": 13.00,
+    "precio": 13,
     "tipo_comida": "Italiana"
   },
   {
     "_id": 7,
     "id_local": 4,
     "nombre_comida": "Pollo al Curry",
-    "precio": 9.50,
+    "precio": 9,
     "tipo_comida": "India"
   },
   {
     "_id": 8,
     "id_local": 4,
     "nombre_comida": "Naan de Ajo",
-    "precio": 3.50,
+    "precio": 3,
     "tipo_comida": "India"
   },
   {
     "_id": 9,
     "id_local": 5,
     "nombre_comida": "Ceviche de Pescado",
-    "precio": 10.00,
+    "precio": 10,
     "tipo_comida": "Peruana"
   },
   {
     "_id": 10,
     "id_local": 5,
     "nombre_comida": "Lomo Saltado",
-    "precio": 12.50,
+    "precio": 12,
     "tipo_comida": "Peruana"
   },
   {
     "_id": 11,
     "id_local": 6,
     "nombre_comida": "Croque Monsieur",
-    "precio": 8.00,
+    "precio": 8,
     "tipo_comida": "Francesa"
   },
   {
     "_id": 12,
     "id_local": 6,
     "nombre_comida": "Quiche Lorraine",
-    "precio": 9.00,
+    "precio": 9,
     "tipo_comida": "Francesa"
   },
   {
     "_id": 13,
     "id_local": 7,
     "nombre_comida": "Pad Thai de Camarones",
-    "precio": 11.50,
+    "precio": 11,
     "tipo_comida": "Tailandesa"
   },
   {
     "_id": 14,
     "id_local": 7,
     "nombre_comida": "Curry Verde",
-    "precio": 10.00,
+    "precio": 10,
     "tipo_comida": "Tailandesa"
   },
   {
     "_id": 15,
     "id_local": 8,
     "nombre_comida": "Paella de Mariscos",
-    "precio": 14.00,
+    "precio": 14,
     "tipo_comida": "Española"
   },
   {
     "_id": 16,
     "id_local": 8,
     "nombre_comida": "Patatas Bravas",
-    "precio": 6.50,
+    "precio": 6,
     "tipo_comida": "Española"
   },
   {
     "_id": 17,
     "id_local": 9,
     "nombre_comida": "Asado de Tira",
-    "precio": 15.00,
+    "precio": 15,
     "tipo_comida": "Argentina"
   },
   {
     "_id": 18,
     "id_local": 9,
     "nombre_comida": "Empanadas de Carne",
-    "precio": 4.00,
+    "precio": 4,
     "tipo_comida": "Argentina"
   },
   {
     "_id": 19,
     "id_local": 10,
     "nombre_comida": "Falafel con Hummus",
-    "precio": 7.50,
+    "precio": 7,
     "tipo_comida": "Libanesa"
   },
   {
     "_id": 20,
     "id_local": 10,
     "nombre_comida": "Shawarma de Pollo",
-    "precio": 8.50,
+    "precio": 8,
     "tipo_comida": "Libanesa"
   }
 ]
