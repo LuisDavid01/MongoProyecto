@@ -7,16 +7,13 @@
 else
 {
     <h2 class="text-center">Consulta de Ubicaciones</h2>
-    <a class="btn btn-success " asp-area="" asp-controller="Ubicaciones" asp-action="CrearUbicaciones"> Crear Ubicaciones</a>
-    <table class="table">
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Ubicaciones" asp-action="CrearUbicaciones">Crear Ubicación</a>
+    <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Direccion</th>
+                <th>Dirección</th>
                 <th>Provincia</th>
-
-                <th></th>
-
-
+                <th class="text-center">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -25,18 +22,13 @@ else
                 <tr>
                     <td>@ubicaciones.direccion</td>
                     <td>@ubicaciones.provincia</td>
-                    <td>
-
-                        <a class="btn btn-success " asp-area="" asp-controller="ubicaciones" asp-route-id="@ubicaciones._id" asp-action="VerUbicaciones"> Editar Ubicaciones</a>
+                    <td class="text-center">
+                        <a class="btn btn-primary me-2" asp-area="" asp-controller="Ubicaciones" asp-route-id="@ubicaciones._id" asp-action="VerUbicaciones">Editar</a>
                         <form asp-controller="Ubicaciones" asp-action="EliminarUbicaciones" method="post" style="display:inline;">
                             <input type="hidden" name="id" value="@ubicaciones._id" />
-                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este Ubicaciones?');">Eliminar Ubicaciones</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar esta ubicación?');">Eliminar</button>
                         </form>
-
                     </td>
-
-
-
                 </tr>
             }
         </tbody>
