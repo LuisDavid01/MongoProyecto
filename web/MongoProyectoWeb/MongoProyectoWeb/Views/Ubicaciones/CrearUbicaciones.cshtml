@@ -1,0 +1,29 @@
+﻿@model UbicacionesModel
+
+<form asp-controller="Categorias" asp-action="CrearCategoria">
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Crear Nueva Categoría</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-group mb-3">
+                    <input type="text" required class="form-control form-control-lg" asp-for="_id" placeholder="ID de la categoría" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <input type="text" required class="form-control form-control-lg" asp-for="direccion" placeholder="direccion" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <textarea class="form-control form-control-lg" asp-for="provincia" placeholder="provincia"></textarea>
+                </div>
+
+                
+                
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Crear Categoría</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
