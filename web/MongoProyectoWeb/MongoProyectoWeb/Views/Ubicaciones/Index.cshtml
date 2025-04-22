@@ -2,18 +2,25 @@
 
 @if (Model == null || !Model.Any())
 {
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Ubicaciones" asp-action="CrearUbicaciones">
+        <i class="bi bi-plus-circle"></i> Crear Ubicación
+    </a>
     <p>No hay Ubicaciones para mostrar.</p>
 }
 else
 {
-    <h2 class="text-center">Consulta de Ubicaciones</h2>
-    <a class="btn btn-success mb-3" asp-area="" asp-controller="Ubicaciones" asp-action="CrearUbicaciones">Crear Ubicación</a>
-    <table class="table table-bordered">
-        <thead>
+    <h2 class="text-center mb-4">Consulta de Ubicaciones</h2>
+
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Ubicaciones" asp-action="CrearUbicaciones">
+        <i class="bi bi-plus-circle"></i> Crear Ubicación
+    </a>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
             <tr>
                 <th>Dirección</th>
                 <th>Provincia</th>
-                <th class="text-center">Acciones</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -22,11 +29,16 @@ else
                 <tr>
                     <td>@ubicaciones.direccion</td>
                     <td>@ubicaciones.provincia</td>
-                    <td class="text-center">
-                        <a class="btn btn-primary me-2" asp-area="" asp-controller="Ubicaciones" asp-route-id="@ubicaciones._id" asp-action="VerUbicaciones">Editar</a>
+                    <td>
+                        <a class="btn btn-warning" asp-area="" asp-controller="Ubicaciones" asp-route-id="@ubicaciones._id" asp-action="VerUbicaciones">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+
                         <form asp-controller="Ubicaciones" asp-action="EliminarUbicaciones" method="post" style="display:inline;">
                             <input type="hidden" name="id" value="@ubicaciones._id" />
-                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar esta ubicación?');">Eliminar</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar esta ubicación?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
                         </form>
                     </td>
                 </tr>
