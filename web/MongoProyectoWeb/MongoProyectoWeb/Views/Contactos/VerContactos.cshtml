@@ -1,0 +1,29 @@
+﻿@model ContactosModel
+
+<form asp-controller="Categorias" asp-action="EditarCategoria">
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Ver y Editar Categoría</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-group mb-4">
+                    <input type="text" required class="form-control form-control-lg" asp-for="telefono" placeholder="Telefono de el local" />
+                </div>
+
+                <div class="form-group mb-4">
+                    <textarea class="form-control form-control-lg" asp-for="correo_electronico" placeholder="Correo electronico del local"></textarea>
+                </div>
+
+                <div class="form-group mb-4">
+                    <textarea class="form-control form-control-lg" asp-for="redes_sociales" placeholder="Redes sociales del local"></textarea>
+                </div>
+
+                <input type="hidden" asp-for="_id" />
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Editar Categoría</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
