@@ -14,27 +14,29 @@ class VistaResenasService {
   }
 
   // Actualizar la vista materializada de reseñas
-  async actualizarVistaMaterializada() {
-    const pipeline = [
-      {
-        $group: {
-          _id: "$id_local",
-          total_resenas: { $sum: 1 }  // Contar el número total de reseñas 
-        }
-      },
-      {
-        $out: "vista_resumen_resenas"  // Guardar los resultados en la colección vista_resumen_resenas
+async actualizarVistaMaterializada() {
+  const pipeline = [
+    {
+      $group: {
+        _id: "$id_local",  // Agrupar por id_local
+        total_resenas: { $sum: 1 },  // Contar el número total de reseñas
+        promedio_calificacion: { $avg: "$calificacion" }  // Calcular el promedio de calificación
       }
-    ];
-
-    try {
-      // Ejecuta el pipeline de agregación para actualizar la vista
-      await Resena.aggregate(pipeline);
-      console.log("Vista materializada actualizada.");
-    } catch (err) {
-      throw new Error('Error al actualizar la vista materializada: ' + err.message);
+    },
+    {
+      $out: "vista_resumen_resenas"  // Guardar los resultados en la colección vista_resumen_resenas
     }
+  ];
+
+  try {
+    // Ejecuta el pipeline de agregación para actualizar la vista
+    await Resena.aggregate(pipeline);
+    console.log("Vista materializada actualizada.");
+  } catch (err) {
+    throw new Error('Error al actualizar la vista materializada: ' + err.message);
   }
+}
+
 }
 
 module.exports = new VistaResenasService();
