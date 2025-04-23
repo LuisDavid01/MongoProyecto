@@ -2,23 +2,27 @@
 
 @if (Model == null || !Model.Any())
 {
-    <a class="btn btn-success " asp-area="" asp-controller="Menus" asp-action="CrearMenus"> Crear Menus</a>
-    <p>No hay Menus para mostrar.</p>
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Menus" asp-action="CrearMenus">
+        <i class="bi bi-plus-circle"></i> Crear Menú
+    </a>
+    <p>No hay Menús para mostrar.</p>
 }
 else
 {
-    <h2 class="text-center">Consulta de Menus</h2>
-    <a class="btn btn-success " asp-area="" asp-controller="Menus" asp-action="CrearMenus"> Crear Menus</a>
-    <table class="table">
-        <thead>
+    <h2 class="text-center mb-4">Consulta de Menús</h2>
+
+    <a class="btn btn-success mb-3" asp-area="" asp-controller="Menus" asp-action="CrearMenus">
+        <i class="bi bi-plus-circle"></i> Crear Menú
+    </a>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
             <tr>
                 <th>Nombre</th>
-                <th>local</th>
-                <th>precio (en dolares)</th>
-                <th>tipo de comida</th>
+                <th>Local</th>
+                <th>Precio (USD)</th>
+                <th>Tipo de comida</th>
                 <th></th>
-
-
             </tr>
         </thead>
         <tbody>
@@ -27,20 +31,20 @@ else
                 <tr>
                     <td>@menus.nombre_comida</td>
                     <td>@menus.id_local</td>
-                    <td>@menus.precio</td>
+                    <td>$ @menus.precio</td>
                     <td>@menus.tipo_comida</td>
                     <td>
+                        <a class="btn btn-warning" asp-area="" asp-controller="Menus" asp-route-id="@menus._id" asp-action="VerMenus">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
 
-                        <a class="btn btn-success " asp-area="" asp-controller="menus" asp-route-id="@menus._id" asp-action="VerMenus"> Editar Menus</a>
                         <form asp-controller="Menus" asp-action="EliminarMenus" method="post" style="display:inline;">
                             <input type="hidden" name="id" value="@menus._id" />
-                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este Menus?');">Eliminar Menus</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar este menú?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
                         </form>
-
                     </td>
-
-
-
                 </tr>
             }
         </tbody>

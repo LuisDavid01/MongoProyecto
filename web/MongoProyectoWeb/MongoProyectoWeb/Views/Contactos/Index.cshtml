@@ -7,7 +7,9 @@
 else
 {
     <h2 class="text-center">Consulta de Contactos</h2>
-    <a class="btn btn-success " asp-area="" asp-controller="Contactos" asp-action="CrearContactos"> Crear Contactos</a>
+    <a class="btn btn-success " asp-area="" asp-controller="Contactos" asp-action="CrearContactos">
+        <i class="bi bi-plus-circle"></i> Crear Contactos
+    </a>
     <table class="table">
         <thead>
             <tr>
@@ -28,26 +30,28 @@ else
                     <td class="w-10">@Contactos.telefono</td>
                     <td>@Contactos.correo_electronico</td>
                     <td>
-                        @Contactos.redes_sociales.Facebook
+                        @Contactos.redes_sociales.facebook
                     </td>
                     <td>
-                        @Contactos.redes_sociales.Twitter
+                        @Contactos.redes_sociales.twitter
                     </td>
                     <td>
-                        @Contactos.redes_sociales.Instagram
+                        @Contactos.redes_sociales.instagram
                     </td>
                     <td>
 
-                        <a class="btn btn-success " asp-area="" asp-controller="Contactos" asp-route-id="@Contactos._id" asp-action="VerContactos"> Editar Contactos</a>
+                        <a class="btn btn-warning" asp-area="" asp-controller="Contactos" asp-route-id="@Contactos._id" asp-action="VerContactos">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+
                         <form asp-controller="Contactos" asp-action="EliminarContactos" method="post" style="display:inline;">
                             <input type="hidden" name="id" value="@Contactos._id" />
-                            <button type="submit" class="btn btn-warning" onclick="return confirm('¿Seguro que quieres eliminar este Contactos?');">Eliminar Contactos</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('¿Seguro que quieres eliminar este Contacto?');">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
                         </form>
 
                     </td>
-
-
-
                 </tr>
             }
         </tbody>
