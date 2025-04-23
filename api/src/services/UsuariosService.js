@@ -22,8 +22,18 @@ class UsuariosService {
   }
  
   async updateUsuarios(id, data) {
-		data.contraseña = await this.hashPassword(data.contraseña);
-    return await Usuarios.findByIdAndUpdate(id, data, { new: true });
+		let updatedData = data;
+		if(updatedData.contraseña != null){
+			updatedData.contraseña = await this.hashPassword(updatedData.contraseña);
+		}else{
+			if(id != 0){
+				const passwordUser = await this.getUsuarios(id)
+				updatedData.contraseña = passwordUser.contraseña
+			}
+			
+		}
+		
+    return await Usuarios.findByIdAndUpdate(id, updatedData, { new: true });
   }
  
   async deleteUsuarios(id) {
