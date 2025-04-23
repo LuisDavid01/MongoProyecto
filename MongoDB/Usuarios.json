@@ -1,9 +1,71 @@
+[{
+  "_id": 1,
+  "nombre": "Carlos Miguel",
+  "correo": "carloslopez@example.es",
+  "contraseña": "$2b$11$bPaY6nDVDQ4DjV/YYZB.WePbOhkiIHfl3wt7Efjfmy/0D7Bw91yA6",
+  "foto_de_perfil": "https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg"
+},
+
 {
-    "_id": {
-      "$oid": "67f94858e6d0cc3f054efe83"
-    },
-    "nombre": "Juan Pérez",
-    "correo": "juanperez@example.com",
-    "contraseña": "secretPassword123",
-    "foto_de_perfil": "https://example.com/imagenes/perfil.jpg"
-  }
+  "_id": 2,
+  "nombre": "Elias González",
+  "correo": "Elias88@example.es",
+  "contraseña": "$2b$11$TaPfItNshohrG1v5M2b/vOm8/m.NtDcwL.qkFKC3keGbslTXw0Xjq",
+  "foto_de_perfil": "https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600"
+},
+{
+  "_id": 3,
+  "nombre": "michael ",
+  "correo": "carloslopez@example.es",
+  "contraseña": "$2b$11$TaPfItNshohrG1v5M2b/vOm8/m.NtDcwL.qkFKC3keGbslTXw0Xjq",
+  "foto_de_perfil": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600"
+},
+{
+  "_id": 4,
+  "nombre": "Ana Martínez",
+  "correo": "anamartinez@example.com",
+  "contraseña": "$2b$11$wS0KsybqRxKBLGxAkfRHMufQp9Zmm.N4bXYXIw./6e0rnxr8PbC2e",
+  "foto_de_perfil": "https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg"
+},
+{
+  "_id": 5,
+  "nombre": "Pedro Sánchez",
+  "correo": "pedrosanchez@example.com",
+  "contraseña": "$2b$11$M5BwuLK.yCnA.R3zzmSp4OMAMTO/8l6amz.9.42IGfX36SPG3gd5.",
+  "foto_de_perfil": "https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg"
+},
+{
+  "_id": 6,
+  "nombre": "Laura Ramírez",
+  "correo": "lauraramirez@example.com",
+  "contraseña": "$2b$11$rTaU1cC5ldtwb9XQ03M9MeesZZ2WtYkHutBWOyuPQVqNAqoZV8t5.",
+  "foto_de_perfil": "https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg"
+},
+{
+  "_id": 7,
+  "nombre": "Diego Torres",
+  "correo": "diegotorres@example.com",
+  "contraseña": "$2b$11$ZMtpDtLnxz/9u6yB51ahnO.x2wygcgakZa4hZxqWnKeTTjjXAWRbK",
+  "foto_de_perfil": "https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg"
+},
+{
+  "_id": 8,
+  "nombre": "Sofía Hernández",
+  "correo": "sofiahernandez@example.com",
+  "contraseña": "$2b$11$O/alxH4cbGAQ8OoOeocX9.Qd/A9FPmih/TYRq/Wzo/wBwIrLzZvHq",
+  "foto_de_perfil": "https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg"
+},
+{
+  "_id": 9,
+  "nombre": "Luis Fernández",
+  "correo": "luisfernandez@example.com",
+  "contraseña": "$2b$11$CYj6Ur/dIBLZQCMWw6OxKefJq6pTmBIPYPeob.lvaosr6cJnIDhuu",
+  "foto_de_perfil": "https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg"
+},
+{
+  "_id": 10,
+  "nombre": "Elena Díaz",
+  "correo": "elenadiaz@example.com",
+  "contraseña": "$2b$11$rWdIiZtjZh1BjRub8MvT5OB1pOjD.RcyIBKujuke/4vHObZR6NjD6",
+  "foto_de_perfil": "https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg"
+}]
